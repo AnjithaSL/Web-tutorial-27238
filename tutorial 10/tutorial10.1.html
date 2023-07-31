@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial 10</title>
+  </head>
+  <body>
+    <center>
+    <button onclick="Birth()"> Year of Birth</button>
+  </center>
+
+    <script>
+      function Birth() {
+        const nicNumber = prompt("Enter NIC number:");
+
+        if (nicNumber.length === 12 && nicNumber.match(/^\d+$/) !== null) {
+          const birthYear = nicNumber.substring(0, 4);
+
+          alert(`Year of Birth: ${birthYear}`);
+        } else {
+          alert(
+            "Invalid NIC number!."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

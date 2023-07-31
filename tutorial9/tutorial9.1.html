@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial 9</title>
+  </head>
+  <body>
+    <center>
+    <button onclick="Week()">Cilck Here</button>
+  </center>
+
+    <script>
+      function Week() {
+        const dayNumber = parseInt(prompt("Enter a number 1 to 7:"));
+        if (dayNumber >= 1 && dayNumber <= 7) {
+          const daysOfWeek = [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Subday",
+          ];
+          const day = daysOfWeek[dayNumber - 1];
+          alert(`The day is: ${day}`);
+        } else {
+          alert("Invalid input! Please enter a number between 1 and 7.");
+        }
+      }
+    </script>
+  </body>
+</html>

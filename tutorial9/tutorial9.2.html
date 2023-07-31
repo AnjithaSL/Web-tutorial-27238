@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial 9</title>
+  </head>
+  <body>
+    <center>
+    <button id="googleButton" onclick="direct()">Google</button>
+  </center>
+
+    <script>
+      function direct() {
+        // Show a confirm dialog
+        const result = confirm("Are you sure to visit Google?");
+
+        if (result) {
+          window.location.href = "https://www.google.co.uk/";
+        } else {
+          alert("You decided to stay.");
+        }
+      }
+    </script>
+  </body>
+</html>
